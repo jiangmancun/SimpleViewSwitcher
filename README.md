@@ -1,5 +1,8 @@
 # 自定义广告View
 
+####效果图：
+<image src="./image/view_switcher.gif" />
+
 **布局中使用**
 
 ```xml

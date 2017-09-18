@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.yuntianhe.library.HorizontalSwitchAnimation;
+import com.yuntianhe.library.FromRightToLeftIn;
 import com.yuntianhe.library.IAnimationFactory;
 import com.yuntianhe.library.SimpleViewSwitcher;
 
@@ -30,7 +30,7 @@ public class HorizontalViewSwitcher extends SimpleViewSwitcher<String> {
 
     @Override
     protected IAnimationFactory onCreateAnimation() {
-        return new HorizontalSwitchAnimation();
+        return new FromRightToLeftIn();
     }
 
     @Override

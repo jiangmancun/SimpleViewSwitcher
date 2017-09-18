@@ -8,10 +8,10 @@ import android.view.animation.TranslateAnimation;
  * @author dwj  2017/9/18 18:57
  */
 
-public class HorizontalSwitchAnimation implements IAnimationFactory {
+public class FromBottomToTopIn implements IAnimationFactory {
 
-    private Animation createAnim(float xStart, float xEnd) {
-        final TranslateAnimation rotation = new TranslateAnimation(1, xStart, 1, xEnd, 1, 0f, 1, 0f);
+    private Animation createAnim(float yStart, float yEnd) {
+        final TranslateAnimation rotation = new TranslateAnimation(1, 0f, 1, 0f, 1, yStart, 1, yEnd);
         rotation.setDuration(500);
         rotation.setFillAfter(false);
         rotation.setInterpolator(new LinearInterpolator());

@@ -68,18 +68,13 @@ public abstract class SimpleViewSwitcher<Data> extends ViewSwitcher
 
     public SimpleViewSwitcher(Context context, AttributeSet attrs) {
         super(context, attrs);
-
+        setFactory(this);
+        
         mHandler = new Handler();
         mSwitchDuration = getDuration();
         mGravity = getGravity();
 
-        setFactory(this);
-
-        IAnimationFactory factory = onCreateAnimation();
-        if (factory != null) {
-            setInAnimation(factory.in());
-            setOutAnimation(factory.out());
-        }
+        setAnimationFactory(onCreateAnimation());
     }
 
     public void setData(List<Data> list) {
@@ -130,6 +125,13 @@ public abstract class SimpleViewSwitcher<Data> extends ViewSwitcher
 
     public void setDuration(int switchDuration) {
         mSwitchDuration = switchDuration;
+    }
+
+    public void setAnimationFactory(IAnimationFactory factory) {
+        if (factory != null) {
+            setInAnimation(factory.in());
+            setOutAnimation(factory.out());
+        }
     }
 
     // 执行滚动动画

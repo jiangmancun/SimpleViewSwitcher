@@ -7,7 +7,14 @@
     tools:context="com.example.simpleviewswitcher.MainActivity">
 
     <com.example.simpleviewswitcher.HorizontalViewSwitcher
-        android:id="@+id/horizontal_view_switcher"
+        android:id="@+id/from_left_to_right_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#f7f7f7" />
+
+    <com.example.simpleviewswitcher.HorizontalViewSwitcher
+        android:id="@+id/from_right_to_left_in"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -28,7 +35,28 @@
             android:src="@mipmap/icon_activity_ring" />
 
         <com.example.simpleviewswitcher.VerticalViewSwitcher
-            android:id="@+id/vertical_view_switcher"
+            android:id="@+id/from_top_to_bottom_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f7f7f7"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/icon_activity_ring" />
+
+        <com.example.simpleviewswitcher.VerticalViewSwitcher
+            android:id="@+id/from_bottom_to_top_in"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp" />

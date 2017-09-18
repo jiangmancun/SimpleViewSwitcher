@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.yuntianhe.library.IAnimationFactory;
 import com.yuntianhe.library.SimpleViewSwitcher;
-import com.yuntianhe.library.VerticalSwitchAnimation;
+import com.yuntianhe.library.FromBottomToTopIn;
 
 /**
  * @author dwj  2017/9/11 10:23
@@ -26,7 +26,7 @@ public class VerticalViewSwitcher extends SimpleViewSwitcher<String> {
 
     @Override
     protected IAnimationFactory onCreateAnimation() {
-        return new VerticalSwitchAnimation();
+        return new FromBottomToTopIn();
     }
 
     @Override
