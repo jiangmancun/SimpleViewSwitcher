@@ -120,4 +120,4 @@ public class MainActivity extends Activity {
 
 # 如何联系我：
 
-QQ：129830085，QQ群：83936534
+QQ：1298300385，QQ群：83936534
