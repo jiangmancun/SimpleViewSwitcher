@@ -1,4 +1,4 @@
-package com.yuntianhe.library;
+package com.yuntianhe.simpleviewswitcher;
 
 import android.view.animation.Animation;
 

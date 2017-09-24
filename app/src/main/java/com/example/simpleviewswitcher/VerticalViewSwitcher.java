@@ -10,9 +10,9 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.yuntianhe.library.IAnimationFactory;
-import com.yuntianhe.library.SimpleViewSwitcher;
-import com.yuntianhe.library.FromBottomToTopIn;
+import com.yuntianhe.simpleviewswitcher.IAnimationFactory;
+import com.yuntianhe.simpleviewswitcher.SimpleViewSwitcher;
+import com.yuntianhe.simpleviewswitcher.FromBottomToTopIn;
 
 /**
  * @author dwj  2017/9/11 10:23

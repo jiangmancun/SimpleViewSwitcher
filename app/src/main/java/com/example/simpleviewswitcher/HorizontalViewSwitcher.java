@@ -9,9 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.yuntianhe.library.FromRightToLeftIn;
-import com.yuntianhe.library.IAnimationFactory;
-import com.yuntianhe.library.SimpleViewSwitcher;
+import com.yuntianhe.simpleviewswitcher.FromRightToLeftIn;
+import com.yuntianhe.simpleviewswitcher.IAnimationFactory;
+import com.yuntianhe.simpleviewswitcher.SimpleViewSwitcher;
 
 /**
  * @author dwj  2017/9/11 10:23

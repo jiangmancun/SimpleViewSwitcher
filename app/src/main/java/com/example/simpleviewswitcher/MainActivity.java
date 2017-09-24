@@ -3,10 +3,10 @@ package com.example.simpleviewswitcher;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.yuntianhe.library.FromBottomToTopIn;
-import com.yuntianhe.library.FromLeftToRightIn;
-import com.yuntianhe.library.FromRightToLeftIn;
-import com.yuntianhe.library.FromTopToBottomIn;
+import com.yuntianhe.simpleviewswitcher.FromBottomToTopIn;
+import com.yuntianhe.simpleviewswitcher.FromLeftToRightIn;
+import com.yuntianhe.simpleviewswitcher.FromRightToLeftIn;
+import com.yuntianhe.simpleviewswitcher.FromTopToBottomIn;
 
 public class MainActivity extends Activity {
 
