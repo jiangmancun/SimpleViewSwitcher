@@ -88,9 +88,9 @@ public abstract class SimpleViewSwitcher<Data> extends ViewSwitcher
     @Override
     public View makeView() {
         View view = onCreateView(LayoutInflater.from(getContext()));
-        FrameLayout.LayoutParams lp = (LayoutParams) view.getLayoutParams();
+        LayoutParams lp = (LayoutParams) view.getLayoutParams();
         if (lp == null) {
-            lp = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            lp = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         }
         lp.gravity = mGravity;
         view.setLayoutParams(lp);
@@ -164,8 +164,10 @@ public abstract class SimpleViewSwitcher<Data> extends ViewSwitcher
 
     @Override
     public void onClick(View v) {
-        if (mOnItemClickListener != null) {
-            mOnItemClickListener.onItemClick(getCurrentView(), mIndex, mData.get(mIndex));
+        if (mData != null && mData.size() != 0) {
+            if (mOnItemClickListener != null) {
+                mOnItemClickListener.onItemClick(getCurrentView(), mIndex, mData.get(mIndex));
+            }
         }
     }
 

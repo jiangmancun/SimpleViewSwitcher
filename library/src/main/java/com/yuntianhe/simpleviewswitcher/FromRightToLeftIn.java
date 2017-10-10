@@ -12,7 +12,7 @@ public class FromRightToLeftIn implements IAnimationFactory {
 
     private Animation createAnim(float xStart, float xEnd) {
         final TranslateAnimation rotation = new TranslateAnimation(1, xStart, 1, xEnd, 1, 0f, 1, 0f);
-        rotation.setDuration(500);
+        rotation.setDuration(800);
         rotation.setFillAfter(false);
         rotation.setInterpolator(new LinearInterpolator());
         return rotation;

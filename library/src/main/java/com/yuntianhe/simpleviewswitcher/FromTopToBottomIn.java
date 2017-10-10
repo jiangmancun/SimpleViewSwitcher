@@ -12,7 +12,7 @@ public class FromTopToBottomIn implements IAnimationFactory {
 
     private Animation createAnim(float yStart, float yEnd) {
         final TranslateAnimation rotation = new TranslateAnimation(1, 0f, 1, 0f, 1, yStart, 1, yEnd);
-        rotation.setDuration(500);
+        rotation.setDuration(800);
         rotation.setFillAfter(false);
         rotation.setInterpolator(new LinearInterpolator());
         return rotation;
